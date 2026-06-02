@@ -27,8 +27,14 @@ navigate("/verify-registration", {
   }
 });
     } catch (err) {
-      alert("Registration Failed. Email may already exist.");
-    }
+  console.log(err.response);
+
+  alert(
+    err.response?.data ||
+    err.message ||
+    "Registration Failed"
+  );
+}
   };
 
   return (
