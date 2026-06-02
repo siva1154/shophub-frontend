@@ -1,0 +1,531 @@
+/* ==========================================
+   LUXURY NAVBAR
+========================================== */
+
+/* ===== NAVBAR ===== */
+
+.premium-navbar {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 82px;
+
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 5000;
+
+  background:
+    rgba(10,10,10,0.78);
+
+  border-bottom:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.35);
+
+  transition:
+    all 0.35s ease;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.navbar-logo {
+
+  display: flex;
+  align-items: center;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  letter-spacing: -1px;
+
+  user-select: none;
+
+  transition:
+    all 0.3s ease;
+}
+
+.navbar-logo:hover {
+
+  transform:
+    translateY(-2px);
+}
+
+.logo-main {
+
+  color:
+    #f5e7c4;
+}
+
+.logo-accent {
+
+  color:
+    #d4af37;
+
+  margin-left: 2px;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.navbar-search {
+
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 40px;
+}
+
+.navbar-search input {
+
+  width: 100%;
+  max-width: 520px;
+
+  padding: 14px 20px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.04);
+
+  color:
+    #f5e7c4;
+
+  outline: none;
+
+  font-size: 0.95rem;
+
+  transition:
+    all 0.35s ease;
+}
+
+.navbar-search input::placeholder {
+
+  color:
+    #8f8571;
+}
+
+.navbar-search input:focus {
+
+  border-color:
+    rgba(212,175,55,0.28);
+
+  box-shadow:
+    0 0 20px rgba(212,175,55,0.08);
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.navbar-right {
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+/* ==========================================
+   NAV TEXT LINK
+========================================== */
+
+.nav-link-text {
+
+  position: relative;
+
+  text-decoration: none;
+
+  color:
+    #f5e7c4;
+
+  font-weight: 600;
+
+  transition:
+    all 0.3s ease;
+}
+
+.nav-link-text:hover {
+
+  color:
+    #d4af37;
+}
+
+/* ==========================================
+   ICON BUTTONS
+========================================== */
+
+.nav-icon-btn {
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  color:
+    #f5e7c4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.05rem;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+}
+
+.nav-icon-btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  color:
+    #d4af37;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.3);
+}
+
+/* ==========================================
+   AUTH BUTTONS
+========================================== */
+
+.auth-buttons {
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.nav-auth-btn {
+
+  padding: 11px 20px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(212,175,55,0.15);
+
+  background:
+    linear-gradient(
+      180deg,
+      #181818,
+      #0a0a0a
+    );
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.28);
+}
+
+.nav-auth-btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.28);
+
+  box-shadow:
+    0 16px 35px rgba(0,0,0,0.4);
+}
+
+.nav-auth-btn.outline {
+
+  background:
+    rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color:
+    #d4af37;
+}
+
+.nav-auth-btn.outline:hover {
+
+  border-color:
+    rgba(212,175,55,0.22);
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-menu {
+
+  position: relative;
+}
+
+.profile-btn {
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  color:
+    #f5e7c4;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+}
+
+.profile-btn:hover {
+
+  transform:
+    translateY(-2px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.profile-dropdown {
+
+  position: absolute;
+
+  top: calc(100% + 14px);
+  right: 0;
+
+  min-width: 250px;
+
+  padding: 10px;
+
+  border-radius: 24px;
+
+  background:
+    rgba(15,15,15,0.94);
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(24px);
+
+  box-shadow:
+    0 24px 70px rgba(0,0,0,0.45);
+
+  animation:
+    dropdownFade 0.3s ease;
+}
+
+/* ==========================================
+   DROPDOWN ITEMS
+========================================== */
+
+.profile-dropdown p {
+
+  margin: 0;
+
+  padding: 14px 18px;
+
+  border-radius: 14px;
+
+  color:
+    #f5e7c4;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    all 0.3s ease;
+}
+
+.profile-dropdown p:hover {
+
+  background:
+    rgba(212,175,55,0.08);
+
+  color:
+    #d4af37;
+
+  padding-left: 22px;
+}
+
+/* ==========================================
+   LOGOUT
+========================================== */
+
+.logout-text {
+
+  color:
+    #ff5b5b !important;
+}
+
+.logout-text:hover {
+
+  background:
+    rgba(239,68,68,0.12) !important;
+
+  color:
+    #ff7070 !important;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes dropdownFade {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(10px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .premium-navbar {
+
+    padding: 0 18px;
+  }
+
+  .navbar-search {
+
+    padding: 0 18px;
+  }
+
+  .profile-btn span {
+
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .premium-navbar {
+
+    height: 74px;
+
+    padding: 0 14px;
+  }
+
+  .navbar-search {
+
+    display: none;
+  }
+
+  .navbar-logo {
+
+    font-size: 1.55rem;
+  }
+
+  .nav-link-text {
+
+    display: none;
+  }
+
+  .profile-dropdown {
+
+    right: -6px;
+
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navbar-right {
+
+    gap: 8px;
+  }
+
+  .nav-icon-btn {
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-auth-btn {
+
+    padding: 9px 14px;
+
+    font-size: 0.9rem;
+  }
+}

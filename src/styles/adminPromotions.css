@@ -1,0 +1,141 @@
+/* ==========================================
+   ADMIN PROMOTIONS PAGE
+========================================== */
+
+.promotion-page {
+  min-height: 100vh;
+  padding: 120px 30px 40px;
+  background: var(--body_background);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.promotion-card {
+  width: 100%;
+  max-width: 900px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15,15,15,0.95),
+      rgba(8,8,8,0.95)
+    );
+
+  border: 1px solid rgba(255,215,120,0.12);
+
+  border-radius: 28px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.4);
+
+  backdrop-filter: blur(20px);
+}
+
+.promotion-card h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f5e7c4;
+  margin-bottom: 25px;
+}
+
+.promotion-card input,
+.promotion-card textarea {
+
+  width: 100%;
+
+  background:
+    rgba(255,255,255,0.04);
+
+  border:
+    1px solid rgba(255,215,120,0.12);
+
+  color:
+    #f5e7c4;
+
+  border-radius:
+    18px;
+
+  padding:
+    16px;
+
+  font-size:
+    1rem;
+
+  margin-bottom:
+    20px;
+
+  outline:
+    none;
+
+  transition:
+    0.3s;
+}
+
+.promotion-card input:focus,
+.promotion-card textarea:focus {
+
+  border-color:
+    #d4af37;
+
+  box-shadow:
+    0 0 15px rgba(212,175,55,0.2);
+}
+
+.promotion-card textarea {
+
+  min-height:
+    220px;
+
+  resize:
+    vertical;
+}
+
+.promotion-card input::placeholder,
+.promotion-card textarea::placeholder {
+
+  color:
+    #9ca3af;
+}
+
+.promotion-card button {
+
+  background:
+    linear-gradient(
+      135deg,
+      #d4af37,
+      #f4d03f
+    );
+
+  border:
+    none;
+
+  color:
+    #111;
+
+  font-weight:
+    700;
+
+  border-radius:
+    999px;
+
+  padding:
+    14px 30px;
+
+  cursor:
+    pointer;
+
+  transition:
+    0.3s;
+}
+
+.promotion-card button:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 15px 30px rgba(212,175,55,0.25);
+}

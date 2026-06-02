@@ -1,0 +1,331 @@
+/* ==========================================
+   LUXURY NEWSLETTER SECTION
+========================================== */
+
+/* ===== SECTION ===== */
+
+.newsletter-section {
+
+  padding: 100px 24px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(212,175,55,0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(212,175,55,0.04),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #050505,
+      #0b0b0b,
+      #050505
+    );
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.newsletter-card {
+
+  position: relative;
+
+  overflow: hidden;
+
+  max-width: 1050px;
+
+  margin: auto;
+
+  padding: 70px 50px;
+
+  border-radius: 36px;
+
+  background:
+    rgba(15,15,15,0.74);
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,0.45);
+
+  transition:
+    all 0.4s ease;
+}
+
+.newsletter-card:hover {
+
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  box-shadow:
+    0 35px 85px rgba(0,0,0,0.55),
+    0 0 20px rgba(212,175,55,0.05);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.newsletter-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.newsletter-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 9px 18px;
+
+  border-radius: 999px;
+
+  margin-bottom: 22px;
+
+  background:
+    rgba(212,175,55,0.08);
+
+  border:
+    1px solid rgba(212,175,55,0.12);
+
+  color:
+    #d4af37;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.newsletter-content h2 {
+
+  font-size: clamp(2.4rem, 5vw, 4rem);
+
+  font-weight: 850;
+
+  line-height: 1.1;
+
+  margin-bottom: 18px;
+
+  color:
+    #f5e7c4;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.newsletter-content p {
+
+  max-width: 700px;
+
+  margin: 0 auto 36px;
+
+  color:
+    #9f9279;
+
+  font-size: 1.05rem;
+
+  line-height: 2;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.newsletter-form {
+
+  display: flex;
+
+  gap: 14px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  max-width: 720px;
+
+  margin: auto;
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.newsletter-form input {
+
+  flex: 1;
+
+  min-width: 280px;
+
+  padding: 16px 20px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.04);
+
+  color:
+    #f5e7c4;
+
+  outline: none;
+
+  font-size: 1rem;
+
+  transition:
+    all 0.35s ease;
+}
+
+.newsletter-form input::placeholder {
+
+  color:
+    #8f8571;
+}
+
+.newsletter-form input:focus {
+
+  border-color:
+    rgba(212,175,55,0.28);
+
+  box-shadow:
+    0 0 20px rgba(212,175,55,0.08);
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.newsletter-form button {
+
+  padding: 16px 30px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(212,175,55,0.15);
+
+  background:
+    linear-gradient(
+      180deg,
+      #181818,
+      #0a0a0a
+    );
+
+  color:
+    #f5e7c4;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,0.35);
+}
+
+.newsletter-form button:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.28);
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.45),
+    0 0 18px rgba(212,175,55,0.05);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .newsletter-section {
+
+    padding: 80px 16px;
+  }
+
+  .newsletter-card {
+
+    padding: 45px 24px;
+
+    border-radius: 28px;
+  }
+
+  .newsletter-content h2 {
+
+    font-size: 2.3rem;
+  }
+
+  .newsletter-form {
+
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+
+    width: 100%;
+  }
+
+  .newsletter-form input {
+
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .newsletter-content h2 {
+
+    font-size: 2rem;
+  }
+
+  .newsletter-content p {
+
+    font-size: 0.96rem;
+
+    line-height: 1.8;
+  }
+}

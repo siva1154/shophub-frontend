@@ -1,0 +1,381 @@
+/* ==========================================
+   LUXURY ADMIN DASHBOARD
+========================================== */
+
+/* ===== PAGE ===== */
+
+.admin-dashboard-page {
+  min-height: 100vh;
+
+  padding: 110px 24px 40px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(212,175,55,0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(212,175,55,0.04),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #050505,
+      #0b0b0b,
+      #050505
+    );
+}
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.admin-dashboard-wrapper {
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.admin-dashboard-header {
+  margin-bottom: 40px;
+}
+
+.admin-dashboard-header h2 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  font-weight: 800;
+
+  color:
+    #f5e7c4;
+
+  margin-bottom: 10px;
+}
+
+.admin-dashboard-header p {
+  color:
+    #9f9279;
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   ACTION BAR
+========================================== */
+
+.admin-action-bar {
+  display: flex;
+  gap: 14px;
+
+  flex-wrap: wrap;
+
+  margin: 28px 0 36px;
+}
+
+.admin-action-bar button {
+
+  padding: 14px 24px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(212,175,55,0.12);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+}
+
+.admin-action-bar button:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.25);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* ==========================================
+   STATS GRID
+========================================== */
+
+.admin-stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+  gap: 24px;
+
+  margin-bottom: 40px;
+}
+
+/* ==========================================
+   STAT CARD
+========================================== */
+
+.admin-stat-card {
+
+  padding: 30px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(15,15,15,0.72);
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,0.4);
+
+  transition:
+    all 0.35s ease;
+}
+
+.admin-stat-card:hover {
+
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  box-shadow:
+    0 25px 65px rgba(0,0,0,0.5),
+    0 0 20px rgba(212,175,55,0.06);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.admin-stat-icon {
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  font-size: 1.8rem;
+
+  background:
+    rgba(212,175,55,0.08);
+
+  border:
+    1px solid rgba(212,175,55,0.12);
+
+  color:
+    #d4af37;
+}
+
+/* ==========================================
+   STAT CONTENT
+========================================== */
+
+.admin-stat-card h4 {
+
+  color:
+    #9f9279;
+
+  margin-bottom: 10px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+}
+
+.admin-stat-card h2 {
+
+  color:
+    #f5e7c4;
+
+  font-size: 2.4rem;
+
+  font-weight: 800;
+}
+
+/* ==========================================
+   PANELS
+========================================== */
+
+.latest-products-section,
+.admin-products-section,
+.admin-orders-section,
+.admin-users-section {
+
+  padding: 30px;
+
+  margin-bottom: 40px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(15,15,15,0.72);
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 18px 50px rgba(0,0,0,0.38);
+}
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.latest-products-section h3,
+.admin-products-section h3,
+.admin-orders-section h3,
+.admin-users-section h3 {
+
+  color:
+    #f5e7c4;
+
+  font-size: 1.5rem;
+
+  margin-bottom: 22px;
+
+  font-weight: 800;
+}
+
+/* ==========================================
+   PRODUCT LIST
+========================================== */
+
+.latest-products-list {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+/* ==========================================
+   PRODUCT ITEM
+========================================== */
+
+.latest-product-item {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 20px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(255,255,255,0.05);
+
+  transition:
+    all 0.3s ease;
+}
+
+.latest-product-item:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.15);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* ==========================================
+   PRODUCT TEXT
+========================================== */
+
+.latest-product-name {
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+}
+
+.latest-product-brand {
+
+  color:
+    #9f9279;
+
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   EMPTY TEXT
+========================================== */
+
+.empty-text {
+
+  color:
+    #9f9279;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .admin-dashboard-page {
+    padding: 100px 16px 30px;
+  }
+
+  .admin-action-bar {
+    flex-direction: column;
+  }
+
+  .admin-action-bar button {
+    width: 100%;
+  }
+
+  .latest-product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-stat-card,
+  .latest-products-section,
+  .admin-products-section,
+  .admin-orders-section,
+  .admin-users-section {
+
+    padding: 24px;
+
+    border-radius: 24px;
+  }
+}

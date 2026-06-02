@@ -1,0 +1,497 @@
+/* ==========================================
+   LUXURY ORDERS PAGE
+========================================== */
+
+/* ===== PAGE ===== */
+
+.orders-page {
+
+  min-height: 100vh;
+
+  padding: 110px 24px 40px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(212,175,55,0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(212,175,55,0.04),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #050505,
+      #0b0b0b,
+      #050505
+    );
+}
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.orders-wrapper {
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.orders-title {
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+
+  font-weight: 850;
+
+  margin-bottom: 28px;
+
+  color:
+    #f5e7c4;
+}
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-btn {
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 24px;
+
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+}
+
+.back-btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  color:
+    #d4af37;
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.32);
+}
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-orders {
+
+  padding: 50px;
+
+  text-align: center;
+
+  border-radius: 30px;
+
+  background:
+    rgba(15,15,15,0.74);
+
+  border:
+    1px dashed rgba(212,175,55,0.12);
+
+  color:
+    #9f9279;
+}
+
+/* ==========================================
+   ORDER CARD
+========================================== */
+
+.order-card {
+
+  padding: 30px;
+
+  margin-bottom: 28px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(15,15,15,0.74);
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 22px 60px rgba(0,0,0,0.42);
+
+  transition:
+    all 0.4s ease;
+}
+
+.order-card:hover {
+
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(212,175,55,0.18);
+
+  box-shadow:
+    0 30px 75px rgba(0,0,0,0.52),
+    0 0 18px rgba(212,175,55,0.05);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.order-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+.order-header h4 {
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status-badge {
+
+  padding: 7px 16px;
+
+  border-radius: 999px;
+
+  font-size: 0.86rem;
+
+  font-weight: 700;
+}
+
+.status-badge.active {
+
+  background:
+    rgba(34,197,94,0.12);
+
+  border:
+    1px solid rgba(34,197,94,0.18);
+
+  color:
+    #4ade80;
+}
+
+.status-badge.cancelled {
+
+  background:
+    rgba(239,68,68,0.12);
+
+  border:
+    1px solid rgba(239,68,68,0.18);
+
+  color:
+    #f87171;
+}
+
+/* ==========================================
+   META
+========================================== */
+
+.order-meta {
+
+  margin-top: 14px;
+}
+
+.order-meta p {
+
+  margin-bottom: 8px;
+
+  color:
+    #b7aa8d;
+
+  line-height: 1.7;
+}
+
+/* ==========================================
+   ADDRESS
+========================================== */
+
+.order-address {
+
+  margin-top: 24px;
+}
+
+.order-address h5 {
+
+  margin-bottom: 10px;
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+}
+
+.order-address p {
+
+  color:
+    #9f9279;
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   ITEMS
+========================================== */
+
+.order-items {
+
+  margin-top: 24px;
+}
+
+.order-items h5 {
+
+  margin-bottom: 16px;
+
+  color:
+    #f5e7c4;
+
+  font-weight: 700;
+}
+
+/* ==========================================
+   ITEM CARD
+========================================== */
+
+.order-item-card {
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 16px;
+
+  margin-bottom: 14px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(255,255,255,0.05);
+
+  transition:
+    all 0.35s ease;
+}
+
+.order-item-card:hover {
+
+  transform:
+    translateX(4px);
+
+  border-color:
+    rgba(212,175,55,0.14);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.32);
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.order-item-card img {
+
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(212,175,55,0.08);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.3);
+
+  transition:
+    all 0.35s ease;
+}
+
+.order-item-card:hover img {
+
+  transform:
+    scale(1.04);
+
+  border-color:
+    rgba(212,175,55,0.18);
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.order-item-info h6 {
+
+  margin-bottom: 6px;
+
+  color:
+    #f5e7c4;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+
+.order-item-info p {
+
+  margin: 0;
+
+  color:
+    #9f9279;
+
+  line-height: 1.7;
+}
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.cancel-btn {
+
+  margin-top: 20px;
+
+  padding: 13px 22px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ef4444,
+      #dc2626
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    all 0.35s ease;
+
+  box-shadow:
+    0 12px 28px rgba(239,68,68,0.22);
+}
+
+.cancel-btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 18px 38px rgba(239,68,68,0.32);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .orders-page {
+
+    padding: 100px 16px 30px;
+  }
+
+  .order-card {
+
+    padding: 24px;
+
+    border-radius: 24px;
+  }
+
+  .order-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .order-item-card {
+
+    align-items: flex-start;
+  }
+
+  .order-card:hover {
+
+    transform:
+      translateY(-3px);
+  }
+}
+
+@media (max-width: 540px) {
+
+  .order-item-card {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .order-item-card img {
+
+    width: 80px;
+    height: 80px;
+  }
+
+  .cancel-btn {
+
+    width: 100%;
+  }
+}
