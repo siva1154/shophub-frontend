@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "import.meta.env.https://shophub-backend-osmy.onrender.com",
+  baseURL: "https://shophub-backend-osmy.onrender.com/api",
 });
 
 /* =========================
