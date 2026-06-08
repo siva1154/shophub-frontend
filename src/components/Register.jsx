@@ -59,7 +59,7 @@ navigate("/verify-registration", {
               <label data-text="EMAIL">Email</label>
               <input
                 type="email"
-                placeholder="Enter Email"
+                placeholder=" "
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -67,10 +67,10 @@ navigate("/verify-registration", {
             </div>
 
             <div className="auth-input-group">
-              <label data-text="EMAIL">Password</label>
+              <label data-text="PASSWORD">Password</label>
               <input
                 type="password"
-                placeholder="Enter Password"
+                placeholder=" "
                 minLength={6}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -78,10 +78,10 @@ navigate("/verify-registration", {
               />
             </div>
             <div className="auth-input-group">
-  <label data-text="EMAIL">Confirm Password</label>
+  <label data-text="CONFIRM">Confirm Password</label>
   <input
     type="password"
-    placeholder="Confirm Password"
+    placeholder=" "
     minLength={6}
     value={confirmPassword}
     onChange={(e) => setConfirmPassword(e.target.value)}

@@ -27,6 +27,8 @@ function VerifyRegistration() {
     alert("Unable to resend OTP");
   }
 };
+
+
   const handleVerify = async (e) => {
     e.preventDefault();
 
@@ -77,12 +79,12 @@ function VerifyRegistration() {
           >
 
             <div className="auth-input-group">
-              <label>OTP</label>
+             <label data-text="OTP">OTP</label>
 
               <input
                 type="text"
                 maxLength="6"
-                placeholder="Enter OTP"
+                placeholder=" "
                 value={otp}
                 onChange={(e) =>
                   setOtp(e.target.value)
@@ -94,16 +96,18 @@ function VerifyRegistration() {
             <button
               className="auth-btn"
               type="submit"
+               data-text="VERIFY EMAIL"
             >
-              Verify Email
+               <span className="btn-text">Verify Email</span>
             </button>
 
             <button
   type="button"
   className="auth-btn"
   onClick={handleResendOtp}
+   data-text="RESEND OTP"
 >
-  Resend OTP
+  <span className="btn-text">Resend OTP</span>
 </button>
 
 

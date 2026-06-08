@@ -42,7 +42,7 @@ const ForgotPassword = () => {
           <input
             type="email"
             className="form-control mb-3"
-            placeholder="Enter your email"
+            placeholder=" "
             value={email}
             onChange={(e) =>
               setEmail(e.target.value)

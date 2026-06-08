@@ -217,7 +217,7 @@ if (
 
               <input
                 type="email"
-                placeholder="Enter Email"
+                placeholder=""
                 value={email}
                 onChange={(e) =>
                   setEmail(e.target.value)
@@ -229,13 +229,13 @@ if (
             {/* PASSWORD */}
             <div className="auth-input-group">
 
-              <label data-text="EMAIL">
+              <label data-text="PASSWORD">
                 Password
               </label>
 
               <input
                 type="password"
-                placeholder="Enter Password"
+                placeholder=" "
                 value={password}
                 onChange={(e) =>
                   setPassword(
