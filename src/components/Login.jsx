@@ -211,9 +211,7 @@ if (
             {/* EMAIL */}
             <div className="auth-input-group">
 
-              <label data-text="EMAIL">
-                Email
-              </label>
+             
 
               <input
                 type="email"
@@ -224,15 +222,15 @@ if (
                 }
                 required
               />
+               <label data-text="EMAIL">
+                Email
+              </label>
             </div>
 
             {/* PASSWORD */}
             <div className="auth-input-group">
 
-              <label data-text="PASSWORD">
-                Password
-              </label>
-
+             
               <input
                 type="password"
                 placeholder=" "
@@ -244,6 +242,10 @@ if (
                 }
                 required
               />
+               <label data-text="PASSWORD">
+                Password
+              </label>
+
             </div>
 
             {/* FORGOT PASSWORD */}

@@ -56,7 +56,7 @@ navigate("/verify-registration", {
 
           <form onSubmit={handleRegister} className="auth-form">
             <div className="auth-input-group">
-              <label data-text="EMAIL">Email</label>
+              
               <input
                 type="email"
                 placeholder=" "
@@ -64,10 +64,11 @@ navigate("/verify-registration", {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
+              <label data-text="EMAIL">Email</label>
             </div>
 
             <div className="auth-input-group">
-              <label data-text="PASSWORD">Password</label>
+             
               <input
                 type="password"
                 placeholder=" "
@@ -76,9 +77,10 @@ navigate("/verify-registration", {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
+               <label data-text="PASSWORD">Password</label>
             </div>
             <div className="auth-input-group">
-  <label data-text="CONFIRM">Confirm Password</label>
+  
   <input
     type="password"
     placeholder=" "
@@ -87,6 +89,7 @@ navigate("/verify-registration", {
     onChange={(e) => setConfirmPassword(e.target.value)}
     required
   />
+  <label data-text="CONFIRM">Confirm Password</label>
 </div>
 {confirmPassword && password !== confirmPassword && (
   <p style={{ color: "#ff4d4f", marginTop: "8px" }}>

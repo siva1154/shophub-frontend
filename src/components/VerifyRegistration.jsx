@@ -79,7 +79,7 @@ function VerifyRegistration() {
           >
 
             <div className="auth-input-group">
-             <label data-text="OTP">OTP</label>
+            
 
               <input
                 type="text"
@@ -91,6 +91,7 @@ function VerifyRegistration() {
                 }
                 required
               />
+               <label data-text="OTP">OTP</label>
             </div>
 
             <button
