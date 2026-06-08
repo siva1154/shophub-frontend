@@ -50,13 +50,9 @@ const ForgotPassword = () => {
             required
           />
 
-          <button
-            type="submit"
-            className="primary-btn w-100"
-            disabled={loading}
-          >
-            {loading ? "Sending OTP..." : "Send OTP"}
-          </button>
+          <button type="submit" className="primary-btn w-100" disabled={loading} data-text={loading ? "SENDING..." : "SEND OTP"}>
+  <span className="btn-text">{loading ? "Sending OTP..." : "Send OTP"}</span>
+</button>
         </form>
       </div>
     </div>

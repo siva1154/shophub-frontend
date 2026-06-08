@@ -211,7 +211,7 @@ if (
             {/* EMAIL */}
             <div className="auth-input-group">
 
-              <label>
+              <label data-text="EMAIL">
                 Email
               </label>
 
@@ -229,7 +229,7 @@ if (
             {/* PASSWORD */}
             <div className="auth-input-group">
 
-              <label>
+              <label data-text="EMAIL">
                 Password
               </label>
 
@@ -268,12 +268,9 @@ if (
             </div>
 
             {/* LOGIN BUTTON */}
-            <button
-              className="auth-btn"
-              type="submit"
-            >
-              Login
-            </button>
+            <button className="auth-btn" type="submit" data-text="LOGIN">
+  <span className="btn-text">LOGIN</span>
+</button>
 
             {/* GOOGLE LOGIN */}
             <button
@@ -291,7 +288,7 @@ if (
                 alt="Google"
               />
 
-              Continue with Google
+               <span className="btn-text">Continue with Google</span>
 
             </button>
 
