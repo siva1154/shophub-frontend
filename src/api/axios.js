@@ -13,6 +13,8 @@ const publicEndpoints = [
   "/auth/register",
   "/auth/forgot-password",
   "/auth/reset-password",
+   "/products",        // ✅ ADD
+  "/product/", 
 ];
 
 /* =========================
