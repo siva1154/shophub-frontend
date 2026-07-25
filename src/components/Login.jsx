@@ -62,9 +62,20 @@ function Login() {
 
     } catch (err) {
 
-       console.log(err.response?.data);
-      const message =
-        err.response?.data;
+      console.log(err.response?.data);
+      
+      /* ==========================================
+         FIXED: Handle both string and object error responses
+      ========================================== */
+      let message;
+      
+      if (typeof err.response?.data === 'string') {
+        message = err.response.data;
+      } else if (err.response?.data && typeof err.response.data === 'object') {
+        message = err.response.data.message || err.response.data.error || "Invalid Email or Password";
+      } else {
+        message = "Invalid Email or Password";
+      }
 
      /* =========================
    ACCOUNT DEACTIVATED
@@ -137,10 +148,11 @@ if (
 
     } catch (reactivateError) {
 
-      alert(
-        reactivateError.response?.data ||
-        "Could not reactivate account"
-      );
+      const reactivateMessage = typeof reactivateError.response?.data === 'string' 
+        ? reactivateError.response.data 
+        : reactivateError.response?.data?.message || "Could not reactivate account";
+
+      alert(reactivateMessage);
     }
   }
 
@@ -297,7 +309,7 @@ if (
             {/* REGISTER */}
             <p className="auth-switch">
 
-              Don’t have an account?{" "}
+              Don't have an account?{" "}
 
               <span
                 onClick={() =>
